@@ -1,0 +1,25 @@
+.findmeal_title{
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+}
+.options_section{
+    .options{
+        p{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #F1FFF0;
+            margin: 15px;
+            color:#ffca44;
+            height: 50px;
+                &:hover{
+                    background: #E8F5E9;
+                    transition: .4s;
+                    cursor: pointer;
+                    transform: scale(1.01);
+                }
+        }
+    }
+}   

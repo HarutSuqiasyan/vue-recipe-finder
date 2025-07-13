@@ -1,0 +1,29 @@
+.meal{
+    display: flex;
+    align-items: center;
+    height: 25vh;
+    background: #F1FFF0;
+    width: 100%;
+    margin-top: 10px;
+    cursor: pointer;
+    .meal_img{
+        margin-left: 100px;
+        height: 25vh;
+    }
+    .title_id_section{
+        p{
+            padding: 5px;
+        }
+    }
+    &:hover{
+        background: #E8F5E9;
+        transition: .4s;
+        cursor: pointer;
+        transform: scale(1.01);
+    }
+}
+h2{
+    text-align: center;
+    font-size: 35px;
+    color: #ffca44
+}
