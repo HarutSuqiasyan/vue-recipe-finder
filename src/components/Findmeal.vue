@@ -5,7 +5,9 @@
             <p>1.Get meals with the main ingredient</p>
             <p>2.Get a random meal</p>
             <p>3.Get meals by location</p>
-            <p>4.Get meal by ID</p>
+            <router-link to="/findmeal/getmealbyid">
+                <p>4.Get meal by ID</p>
+            </router-link>
             <p>5.Get meal by first letter</p>
             <p>6. Get meal by name</p>
         </div>

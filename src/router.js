@@ -4,6 +4,8 @@ import About from './components/About.vue'
 import Categories from './components/Categories.vue'
 import Findmeal from './components/Findmeal.vue'
 import CategoryItems from './components/CategoryItems.vue'
+import GetMealById from './components/GetMealById.vue'
+import MealById from './components/MealById.vue'
 
 const routes = [
   { path: '/', name: 'Home', component: Home },
@@ -11,6 +13,8 @@ const routes = [
   { path: '/categories', name: 'Categories', component: Categories },
   { path: '/categories/:strName', name: 'CategoryItems', component: CategoryItems, props: true,},
   { path: '/findmeal', name: 'Findmeal', component: Findmeal },
+  { path: '/findmeal/getmealbyid', name: 'GetMealById', component: GetMealById},
+  { path: '/findmeal/mealbyid/:id', name: 'MealById', component: MealById, props: true,},
 ]
 
 const router = createRouter({
