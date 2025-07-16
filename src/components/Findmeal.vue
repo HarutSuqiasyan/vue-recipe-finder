@@ -5,13 +5,18 @@
             <router-link to="/findmeal/getmealbyingredient">
                 <p>1.Get meals with the main ingredient</p>
             </router-link>
-            <p>2.Get a random meal</p>
-            <p>3.Get meals by location</p>
+            <router-link to="/findmeal/getmealrandom">
+                <p>2.Get a random meal</p>
+            </router-link>
+            <router-link to="/findmeal/getmealbyarea">
+                <p>3.Get meals by location</p>
+            </router-link>
             <router-link to="/findmeal/getmealbyid">
                 <p>4.Get meal by ID</p>
             </router-link>
-            <p>5.Get meal by first letter</p>
-            <p>6. Get meal by name</p>
+            <router-link to="/findmeal/getmealbyname">
+                <p>5. Get meal by name</p>
+            </router-link>
         </div>
     </div>
 </template>
