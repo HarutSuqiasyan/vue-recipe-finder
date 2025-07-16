@@ -1,14 +1,20 @@
 <template>
     <h2>{{ strName }}</h2>
-    <div class="meal" v-for="meal in categoriesJSON.meals">
-        <div class="img_section">
-            <img class="meal_img" :src=meal.strMealThumb>
+
+    <div v-for="meal in categoriesJSON.meals">
+      <router-link :to="'/findmeal/mealbyid/' + meal.idMeal">
+        <div class="meal">
+          <div class="img_section">
+              <img class="meal_img" :src=meal.strMealThumb>
+          </div>
+          <div class="title_id_section">
+              <p>{{ meal.strMeal }}</p>
+              <p>ID: {{ meal.idMeal }}</p>
+          </div>
         </div>
-        <div class="title_id_section">
-            <p>{{ meal.strMeal }}</p>
-            <p>ID: {{ meal.idMeal }}</p>
-        </div>
+      </router-link>
     </div>
+
 </template>
 
 <script>

@@ -1,4 +1,5 @@
 <template>
+  <div class="blank"></div>
   <Header />
   <router-view />
   <Footer />

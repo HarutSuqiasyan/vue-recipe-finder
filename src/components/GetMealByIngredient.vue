@@ -1,8 +1,8 @@
 <template>
-    <h2>Get Meal By ID</h2>
+    <h2>Get Meal By Ingredient</h2>
     <div class="container">
-        <p>Write ID of meal that you want</p>
-        <input min = 0 type="number" placeholder="ID" v-model="id">
+        <p>Write Ingredient of meal that you want</p>
+        <input min = 0 type="text" placeholder="Ingredient" v-model="ingredient">
         <router-link :to="link">
             <button @click="ifBlank()">Get</button>
         </router-link>
@@ -14,19 +14,19 @@
 export default{
     data() {
         return {
-            id: '',
+            ingredient: '',
             error: '',
-            link: '/findmeal/mealbyid/' + this.id
+            link: '/findmeal/mealbyingredient/' + this.ingredient
         }
     },
     methods: {
         ifBlank(){
             if(this.id === ''){
                 this.error = 'ID is not given'
-                this.link = '/findmeal/getmealbyid'
+                this.link = '/findmeal/getmealbyingredient'
             }else {
                 this.error = '';
-                this.link = '/findmeal/mealbyid/' + this.id
+                this.link = '/findmeal/mealbyingredient/' + this.ingredient
             }
         }
     }
@@ -34,5 +34,5 @@ export default{
 
 </script>
 <style scoped>
-@import url(../assets/GetMealById.scss);
+@import url(../assets/GetMealByIngredient.scss);
 </style>

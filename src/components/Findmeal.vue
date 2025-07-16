@@ -2,7 +2,9 @@
     <p class="findmeal_title">Options to find a meal</p>
     <div class="options_section">
         <div class="options">
-            <p>1.Get meals with the main ingredient</p>
+            <router-link to="/findmeal/getmealbyingredient">
+                <p>1.Get meals with the main ingredient</p>
+            </router-link>
             <p>2.Get a random meal</p>
             <p>3.Get meals by location</p>
             <router-link to="/findmeal/getmealbyid">
