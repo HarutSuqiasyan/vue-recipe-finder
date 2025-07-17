@@ -14,7 +14,7 @@
                 </div>
             </div>
             <p class="instructions"><b>Cooking instructions:</b> {{ el.strInstructions }}</p>
-            <a :href="el.strYoutube">🎥 {{ el.strYoutube }}</a>
+            <a :href="el.strYoutube" target="_blank">🎥 {{ el.strYoutube }}</a>
             <p class="area">🗺️ {{ el.strArea }}</p>
         </div>
     </div>
